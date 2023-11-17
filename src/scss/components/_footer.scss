@@ -1,0 +1,14 @@
+footer {
+	// 1부터 3번 반복
+	// 반복문 안에 IF문을 써본다.
+	@for $i from 1 through 3 {
+		@for $i from 1 through 3 {
+			.footer-div:nth-child(#{$i}) {
+				height: 20px * $i;
+				@if ($i==1) {
+					background-color: $yellow;
+				}
+			}
+		}
+	}
+}

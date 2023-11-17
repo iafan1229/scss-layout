@@ -1,0 +1,12 @@
+header {
+	h1 {
+		//변수를 가져와 쓸수있다
+		background-color: #{$default};
+	}
+	.gnb {
+		li {
+			//함수를 쓸수있다
+			@include text($default, 500);
+		}
+	}
+}
